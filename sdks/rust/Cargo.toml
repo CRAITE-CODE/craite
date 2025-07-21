@@ -1,0 +1,29 @@
+[package]
+name = "craite"
+version = "1.0.0"
+edition = "2021"
+authors = ["CRAITE Team"]
+description = "CRAITE Rust SDK for Web3 AI Development"
+license = "MIT"
+repository = "https://github.com/CRAITE-CODE/craite"
+
+[dependencies]
+tokio = { version = "1.35", features = ["full"] }
+reqwest = { version = "0.11", features = ["json"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+dotenv = "0.15"
+clap = { version = "4.4", features = ["derive"], optional = true }
+anyhow = "1.0"
+
+[features]
+default = []
+cli = ["clap"]
+
+[[bin]]
+name = "craite"
+path = "src/bin/craite.rs"
+required-features = ["cli"]
+
+[dev-dependencies]
+mockito = "1.2"
