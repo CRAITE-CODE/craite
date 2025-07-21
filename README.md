@@ -5,7 +5,7 @@
 ![Crates.io](https://img.shields.io/crates/v/craite)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
-CRAITE is a sophisticated Web3-focused AI development platform that combines advanced code generation capabilities with comprehensive blockchain development resources. Available in JavaScript/TypeScript, Python, Rust, and Go.
+Create with conversation, not code. An open Web3 development framework with multi-language code generation, pluggable MCP tools, and community-driven knowledge expansion.
 
 ## 🚀 Quick Start
 
@@ -205,14 +205,13 @@ CRAITE is open source software licensed under the MIT License. See the [LICENSE]
 
 ## 🔗 Resources
 
-- [Website](https://craite.ai)
-- [Documentation](https://docs.craite.ai)
-- [Discord Community](https://discord.gg/craite)
-- [GitHub](https://github.com/craite/craite)
+- [Website](https://craite.xyz)
+- [Documentation](https://docs.craite.xyz/docs)
+- [GitHub](https://github.com/CRAITE-CODE/craite)
 
 ---
 
-**Note**: This project requires an API key from your chosen LLM provider (OpenAI, Anthropic, etc.) to function. See our [documentation](https://docs.craite.ai) for setup instructions.
+**Note**: This project requires an API key from your chosen LLM provider (OpenAI, Anthropic, etc.) to function. See our [documentation](https://craite.xyz/docs) for setup instructions.
 
 ## 🚀 Update: Python SDK Now Functional!
 
