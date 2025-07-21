@@ -1,0 +1,74 @@
+version: '3.8'
+
+services:
+  # JavaScript/TypeScript development environment
+  craite-node:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.node
+    volumes:
+      - ../packages:/app/packages
+      - ../examples/javascript:/app/examples
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - NODE_ENV=development
+    command: npm run dev
+    networks:
+      - craite-network
+
+  # Python development environment
+  craite-python:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.python
+    volumes:
+      - ../sdks/python:/app
+      - ../examples/python:/examples
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - PYTHONUNBUFFERED=1
+    command: python -m craite.cli
+    networks:
+      - craite-network
+
+  # Rust development environment
+  craite-rust:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.rust
+    volumes:
+      - ../sdks/rust:/app
+      - ../examples/rust:/examples
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - RUST_LOG=info
+    command: cargo run --bin craite -- generate "Create a Solana program"
+    networks:
+      - craite-network
+
+  # Local LLM server (optional)
+  ollama:
+    image: ollama/ollama:latest
+    volumes:
+      - ollama-data:/root/.ollama
+    ports:
+      - "11434:11434"
+    networks:
+      - craite-network
+
+  # Documentation server
+  docs:
+    image: nginx:alpine
+    volumes:
+      - ../docs:/usr/share/nginx/html:ro
+    ports:
+      - "8080:80"
+    networks:
+      - craite-network
+
+networks:
+  craite-network:
+    driver: bridge
+
+volumes:
+  ollama-data:

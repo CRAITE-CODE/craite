@@ -1,0 +1,106 @@
+# Dependencies
+node_modules/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.npm
+
+# Build outputs
+dist/
+build/
+*.tsbuildinfo
+.cache/
+target/
+bin/
+*.egg-info/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+venv/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Testing
+coverage/
+.nyc_output/
+.pytest_cache/
+htmlcov/
+*.cover
+.coverage
+.coverage.*
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+*.swp
+
+# Package files
+*.tgz
+*.tar.gz
+*.zip
+
+# Language specific
+# Python
+*.egg
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.nox/
+.mypy_cache/
+.ruff_cache/
+
+# Rust
+Cargo.lock
+**/*.rs.bk
+debug/
+
+# Go
+*.exe
+*.dll
+*.dylib
+*.test
+*.out
+go.work
+
+# Lerna
+lerna-debug.log
+packages/*/package-lock.json
+packages/*/yarn.lock
+
+# Documentation
+docs/_build/
+site/
+
+# Misc
+*.orig
+.cache
+.parcel-cache
+.turbo

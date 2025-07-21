@@ -1,0 +1,26 @@
+# Node.js Dockerfile for CRAITE
+FROM node:20-alpine
+
+# Install build dependencies
+RUN apk add --no-cache python3 make g++ git
+
+# Create app directory
+WORKDIR /app
+
+# Copy package files
+COPY package*.json ./
+COPY lerna.json ./
+COPY packages/ ./packages/
+
+# Install dependencies
+RUN npm ci
+RUN npx lerna bootstrap
+
+# Build all packages
+RUN npm run build
+
+# Expose port if needed
+EXPOSE 3000
+
+# Default command
+CMD ["node", "packages/cli/dist/index.js"]
