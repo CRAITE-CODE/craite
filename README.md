@@ -215,7 +215,7 @@ CRAITE is open source software licensed under the MIT License. See the [LICENSE]
 
 ## 🚀 Update: Python SDK Now Functional!
 
-The Python SDK (v1.0.2) now includes working OpenAI integration. You can test it with:
+The Python SDK (v1.0.2) has been updated. You can test it with:
 
 ```python
 from craite import create_client
