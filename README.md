@@ -208,3 +208,16 @@ CRAITE is open source software licensed under the MIT License. See the [LICENSE]
 ---
 
 **Note**: This project requires an API key from your chosen LLM provider (OpenAI, Anthropic, etc.) to function. See our [documentation](https://docs.craite.ai) for setup instructions.
+
+## 🚀 Update: Python SDK Now Functional!
+
+The Python SDK (v1.0.2) now includes working OpenAI integration. You can test it with:
+
+```python
+from craite import create_client
+
+client = create_client('your-openai-api-key')
+result = client.generate('Create an ERC-20 token')
+print(result['code'])
+```
+
