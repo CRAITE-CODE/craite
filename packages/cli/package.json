@@ -1,6 +1,6 @@
 {
-    "name": "@craite/cli",
-    "version": "1.0.2",
+    "name": "@CRAITE-CODE/cli",
+    "version": "1.0.3",
     "description": "CLI tool for CRAITE Web3 development platform",
     "main": "./dist/index.js",
     "types": "./dist/index.d.ts",

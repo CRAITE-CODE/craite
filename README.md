@@ -226,3 +226,17 @@ result = client.generate('Create an ERC-20 token')
 print(result['code'])
 ```
 
+
+## 📦 Published Packages
+
+### NPM Packages
+- CLI: [npmjs.com/package/@craite/cli](https://www.npmjs.com/package/@craite/cli)
+- Core: [npmjs.com/package/@craite/core](https://www.npmjs.com/package/@craite/core)
+- Web3 Tools: [npmjs.com/package/@craite/web3-tools](https://www.npmjs.com/package/@craite/web3-tools)
+- MCP Connectors: [npmjs.com/package/@craite/mcp-connectors](https://www.npmjs.com/package/@craite/mcp-connectors)
+- Code Generator: [npmjs.com/package/@craite/code-generator](https://www.npmjs.com/package/@craite/code-generator)
+
+### Other Packages
+- Python SDK: [pypi.org/project/craite-sdk](https://pypi.org/project/craite-sdk/)
+- Rust Crate: [crates.io/crates/craite](https://crates.io/crates/craite)
+- Go Module: `go get github.com/CRAITE-CODE/craite/sdks/go`

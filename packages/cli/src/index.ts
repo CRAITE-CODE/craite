@@ -1,11 +1,9 @@
 #!/usr/bin/env node
 
 import { Command } from 'commander';
-import { CRAITECore } from '@craite/core';
 import chalk from 'chalk';
 import ora from 'ora';
 import * as fs from 'fs/promises';
-import * as path from 'path';
 
 const program = new Command();
 
@@ -19,7 +17,7 @@ program
   .description('Generate Web3 code')
   .option('-l, --language <language>', 'Programming language', 'solidity')
   .option('-o, --output <file>', 'Output file path')
-  .action(async (type, options) => {
+  .action(async (_type, options) => {
     const spinner = ora('Generating code...').start();
     
     try {
