@@ -1,5 +1,10 @@
 # CRAITE - Elite Web3 Code Generator & AI Development Platform
 
+![npm version](https://img.shields.io/npm/v/@craite/cli)
+![PyPI version](https://img.shields.io/pypi/v/craite-sdk)
+![Crates.io](https://img.shields.io/crates/v/craite)
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+
 CRAITE is a sophisticated Web3-focused AI development platform that combines advanced code generation capabilities with comprehensive blockchain development resources. Available in JavaScript/TypeScript, Python, Rust, and Go.
 
 ## 🚀 Quick Start
