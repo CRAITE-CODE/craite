@@ -15,6 +15,6 @@ Examples of behavior that contributes to a positive environment:
 
 ## Enforcement
 
-Instances of abusive behavior may be reported to: conduct@craite.ai
+Instances of abusive behavior may be reported to: support@craite.xyz
 
 All complaints will be reviewed and investigated promptly and fairly.
