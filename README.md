@@ -1,4 +1,4 @@
-# CRAITE - Elite Web3 Code Generator & AI Development Platform
+# CRAITE - Your Web3 AI CoPilot
 
 ![npm version](https://img.shields.io/npm/v/@craite/cli)
 ![PyPI version](https://img.shields.io/pypi/v/craite-sdk)
