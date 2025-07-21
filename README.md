@@ -1,4 +1,5 @@
 # CRAITE - Your Web3 AI CoPilot
+CA: 2fSTec6ByDMo3V8MMehsGGgkBjNNh7ZfARAKcdqsbonk
 
 ![npm version](https://img.shields.io/npm/v/@craite/cli)
 ![PyPI version](https://img.shields.io/pypi/v/craite-sdk)
