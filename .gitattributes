@@ -1,0 +1,15 @@
+# Vendor and generated files
+package-lock.json linguist-generated=true
+yarn.lock linguist-generated=true
+
+# Documentation
+*.md linguist-documentation=true
+docs/* linguist-documentation=true
+
+# Configs shouldn't count heavily
+*.json linguist-detectable=false
+*.yml linguist-detectable=false
+
+# Ensure proper detection
+*.ts linguist-language=TypeScript
+*.tsx linguist-language=TypeScript
